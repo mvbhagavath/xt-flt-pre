@@ -1,0 +1,54 @@
+// TODO : create variables for colors, change tags to classnames
+
+.character-card {
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  height: 100%;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin: 10px 0 0;
+  }
+
+  &__location-label {
+    display: block;
+  }
+
+  &__basic-details {
+    background: #000;
+    bottom: 0;
+    color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__status {
+    border: 5px solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+
+    &--alive {
+      border-color: rgb(63, 223, 71);
+    }
+
+    &--dead {
+      border-color: rgb(230, 58, 58);
+    }
+
+    &--unknown {
+      border-color: rgb(78, 77, 77);
+    }
+  }
+}

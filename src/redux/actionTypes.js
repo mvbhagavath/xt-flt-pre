@@ -1,0 +1,4 @@
+export const FETCH_DATA_SUCCESS = "FETCH_DATA_SUCCESS";
+export const FETCH_DATA_FAIL = "FETCH_DATA_FAIL";
+export const SORT_BY_ID = "SORT_BY_ID";
+export const UPDATE_SET_FILTERS = "UPDATE_SET_FILTERS";

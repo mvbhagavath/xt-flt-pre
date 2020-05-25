@@ -1,0 +1,31 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": [
+		"stylelint-order"
+	],
+  "rules": {
+    "color-hex-case": [
+      "lower",
+      {
+        "severity": "warning",
+        "message": "Lowercase letters are easier to distinguish from numbers"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "message": "Please use 2 spaces for indentation.",
+        "severity": "warning"
+      }
+    ],
+    "block-no-empty": true,
+    "block-opening-brace-space-before": "always",
+    "string-quotes": "single",
+    "order/order": [
+			"custom-properties",
+			"declarations"
+		],
+		"order/properties-alphabetical-order": true,
+    "max-nesting-depth": 3
+  }
+}

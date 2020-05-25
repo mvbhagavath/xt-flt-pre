@@ -1,0 +1,14 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+$blue: rgb(29, 48, 219);
+
+.app-container {
+  .app-container-text {
+    color: $blue;
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}

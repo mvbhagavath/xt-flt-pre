@@ -1,0 +1,110 @@
+{
+  "extends": [
+    "airbnb", // enables "import", "react", "jsx-a11y" plugins
+    // switch off conflicting "style" rules (from eslint and airbnb) that are handled by prettier
+    "plugin:prettier/recommended", // also enables "prettier" plugin, and sets the rule: prettier/prettier to "error".
+    "prettier/react",
+    "plugin:react-hooks/recommended"
+    // ...add any more rules that conflict with prettier "styles" here. eg. prettier/flow
+  ],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true // because the project is transpiled by webpack which exposes process, module, __dirname etc
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "latest" // override airbnb base version
+    }
+  },
+  // 0 = off, 1 = warn, 2 = error
+  "rules": {
+    "strict": 0,
+    // warn about console.log/info statements
+    // allow console.warn/error as these provide useful messages that shouldn"t be ignored
+    "no-console": [
+      1,
+      { "allow": ["warn", "error"] }
+    ],
+    // allow let x = a => a ? "something" : "something else" (apparently it"s confusing)
+    "no-confusing-arrow": 0,
+    // allow x++
+    "no-plusplus": 0,
+    // allow class methods to be defined which don"t use "this"
+    "class-methods-use-this": 0,
+    // allow unused variables in function definitions so they can satisfy interface definitions
+    "no-unused-vars": 0,
+    // allow for-in syntax disabled by airbnb
+    "no-restricted-syntax": [
+      0, "ForInStatement"
+    ],
+    // allow for in loops without an if check
+    "guard-for-in": 0,
+    // allow a single export without a default export
+    "import/prefer-default-export": 0,
+    // allow dynamic imports of the form: import `some/${dynamic-component}`
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        // Apply for all folders except src/ (overridden bellow)
+        // allow import of dev dependencies
+        "devDependencies": true,
+        // disallow import of optional dependencies
+        "optionalDependencies": false,
+        // allow import of peer dependencies
+        "peerDependencies": true
+      }
+    ],
+    // JSX-A11Y RULES
+    // allow href="#"
+    "jsx-a11y/anchor-is-valid": 0,
+    // REACT RULES
+    // allow jsx in *.js files
+    "react/jsx-filename-extension": 0,
+    // allow stateless functions
+    "react/prefer-stateless-function": 0,
+    // SONAR ALIGNMENT RULES
+    "line-comment-position": [
+      2,
+      { "position": "above" }
+    ],
+    "no-unused-expressions": [
+      "off",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      // disallow importing dev dependencies inside the src folder with the exception of test files
+      "files": ["src /**/*.js"
+      ],
+      "excludedFiles": "*.spec.js",
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          2,
+          {
+            // disallow import of dev dependencies
+            "devDependencies": false
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src /**/*.spec.js", ".eslintrc.js", "*.config.js"],
+      "rules": {
+        "line-comment-position": 0
+      }
+    }
+  ]
+}

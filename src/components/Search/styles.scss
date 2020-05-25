@@ -1,0 +1,15 @@
+.search-bar {
+  &__input {
+    border: 0;
+    border-bottom: 1px solid;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background: transparent;
+    border-radius: 4px;
+  }
+}
