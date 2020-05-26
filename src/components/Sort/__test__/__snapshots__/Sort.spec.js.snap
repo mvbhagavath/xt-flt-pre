@@ -14,12 +14,14 @@ Object {
           Sort By ID
         </span>
         <button
-          class="sort__button"
+          class="sort__button "
+          type="button"
         >
-          Asc
+          Asec
         </button>
         <button
-          class="sort__button"
+          class="sort__button "
+          type="button"
         >
           Desc
         </button>
@@ -36,12 +38,14 @@ Object {
         Sort By ID
       </span>
       <button
-        class="sort__button"
+        class="sort__button "
+        type="button"
       >
-        Asc
+        Asec
       </button>
       <button
-        class="sort__button"
+        class="sort__button "
+        type="button"
       >
         Desc
       </button>

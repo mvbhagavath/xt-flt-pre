@@ -6,7 +6,130 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="side-panel"
+        class="col-lg-2 side-panel"
+      >
+        <div
+          class="side-panel__filter-label"
+        >
+          <span>
+            Filters
+          </span>
+          <button
+            class="side-panel__filter-label-icon"
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="side-panel__filter-container 
+          "
+        >
+          <div
+            class="filter-group"
+          >
+            <div
+              class="filter-group__label"
+            >
+              Species
+            </div>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Human
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Animal
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Alien
+            </button>
+          </div>
+          <div
+            class="filter-group"
+          >
+            <div
+              class="filter-group__label"
+            >
+              Gender
+            </div>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Male
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Female
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              unknown
+            </button>
+          </div>
+          <div
+            class="filter-group"
+          >
+            <div
+              class="filter-group__label"
+            >
+              Origin
+            </div>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Earth
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              Mars
+            </button>
+            <button
+              class="filter-group__filter inactive"
+              type="button"
+            >
+              unknown
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="col-lg-2 side-panel"
+    >
+      <div
+        class="side-panel__filter-label"
+      >
+        <span>
+          Filters
+        </span>
+        <button
+          class="side-panel__filter-label-icon"
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        class="side-panel__filter-container 
+          "
       >
         <div
           class="filter-group"
@@ -17,17 +140,20 @@ Object {
             Species
           </div>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Human
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Animal
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Alien
           </button>
@@ -41,17 +167,20 @@ Object {
             Gender
           </div>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Male
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Female
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             unknown
           </button>
@@ -65,99 +194,24 @@ Object {
             Origin
           </div>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Earth
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             Mars
           </button>
           <button
-            class="filter-group__filter"
+            class="filter-group__filter inactive"
+            type="button"
           >
             unknown
           </button>
         </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="side-panel"
-    >
-      <div
-        class="filter-group"
-      >
-        <div
-          class="filter-group__label"
-        >
-          Species
-        </div>
-        <button
-          class="filter-group__filter"
-        >
-          Human
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          Animal
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          Alien
-        </button>
-      </div>
-      <div
-        class="filter-group"
-      >
-        <div
-          class="filter-group__label"
-        >
-          Gender
-        </div>
-        <button
-          class="filter-group__filter"
-        >
-          Male
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          Female
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          unknown
-        </button>
-      </div>
-      <div
-        class="filter-group"
-      >
-        <div
-          class="filter-group__label"
-        >
-          Origin
-        </div>
-        <button
-          class="filter-group__filter"
-        >
-          Earth
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          Mars
-        </button>
-        <button
-          class="filter-group__filter"
-        >
-          unknown
-        </button>
       </div>
     </div>
   </div>,

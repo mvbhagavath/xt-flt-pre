@@ -5,12 +5,12 @@ import CharacterCard from "..";
 describe("CharacterCard", () => {
   it("should render component without crashing", () => {
     const props = {
-      id: "1",
+      id: 1,
       name: "test",
       status: "alive",
       gender: "male",
       species: "humanoid",
-      origin: "earth",
+      origin: { name:"earth"},
       image: "xyz",
     };
     const wrapper = render(<CharacterCard {...props} />);

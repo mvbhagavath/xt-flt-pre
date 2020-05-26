@@ -8,7 +8,11 @@ import Sort from "..";
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const store = mockStore({
-  fetchData: {},
+  fetchData: {
+    setFilters: {
+      species:[]
+    }
+  },
 });
 
 describe("Sort", () => {

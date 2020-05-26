@@ -14,17 +14,20 @@ Object {
           Species
         </div>
         <button
-          class="filter-group__filter"
+          class="filter-group__filter inactive"
+          type="button"
         >
           Human
         </button>
         <button
-          class="filter-group__filter"
+          class="filter-group__filter inactive"
+          type="button"
         >
           Animal
         </button>
         <button
-          class="filter-group__filter"
+          class="filter-group__filter inactive"
+          type="button"
         >
           Alien
         </button>
@@ -41,17 +44,20 @@ Object {
         Species
       </div>
       <button
-        class="filter-group__filter"
+        class="filter-group__filter inactive"
+        type="button"
       >
         Human
       </button>
       <button
-        class="filter-group__filter"
+        class="filter-group__filter inactive"
+        type="button"
       >
         Animal
       </button>
       <button
-        class="filter-group__filter"
+        class="filter-group__filter inactive"
+        type="button"
       >
         Alien
       </button>

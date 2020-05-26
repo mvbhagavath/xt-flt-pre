@@ -19,9 +19,6 @@ Object {
             class="character-card__basic-details"
           >
             <span
-              class="character-card__status character-card__status--alive"
-            />
-            <span
               class="character-card__name-id"
             >
               1
@@ -36,8 +33,14 @@ Object {
           <div
             class="character-card__other-details"
           >
+            <span
+              class="character-card__status character-card__status--alive"
+            />
             alive
-             - 
+          </div>
+          <div
+            class="character-card__other-details"
+          >
             humanoid
              - 
             male
@@ -52,7 +55,9 @@ Object {
             </span>
             <span
               class="character-card__location"
-            />
+            >
+              earth
+            </span>
           </div>
         </div>
       </div>
@@ -73,9 +78,6 @@ Object {
           class="character-card__basic-details"
         >
           <span
-            class="character-card__status character-card__status--alive"
-          />
-          <span
             class="character-card__name-id"
           >
             1
@@ -90,8 +92,14 @@ Object {
         <div
           class="character-card__other-details"
         >
+          <span
+            class="character-card__status character-card__status--alive"
+          />
           alive
-           - 
+        </div>
+        <div
+          class="character-card__other-details"
+        >
           humanoid
            - 
           male
@@ -106,7 +114,9 @@ Object {
           </span>
           <span
             class="character-card__location"
-          />
+          >
+            earth
+          </span>
         </div>
       </div>
     </div>
