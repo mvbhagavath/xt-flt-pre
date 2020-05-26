@@ -8,6 +8,12 @@ const api = axios.create({
   timeout: TIMEOUT_SECS,
 });
 
+/**
+ * getData - method to handle the api calls
+ * @param {string} endpoint 
+ * @param {function} onSuccess 
+ * @param {function} onFail 
+ */
 const getData = (endpoint = CHRACTER_ENDPOINT, onSuccess, onFail) => (
   dispatch
 ) => {

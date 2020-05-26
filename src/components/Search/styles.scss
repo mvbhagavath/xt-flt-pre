@@ -1,8 +1,14 @@
+@import '../../sass/base';
+
 .search-bar {
+  margin: 10px 0;
+  
   &__input {
     border: 0;
     border-bottom: 1px solid;
-
+    background: transparent;
+    color: $dark-grey;
+    margin: 0 5px 0 0;
     &:focus {
       outline: none;
     }

@@ -23,6 +23,9 @@ module.exports = {
           chunks: 'all',
           enforce: true,
         },
+        defaultVendors: {
+          reuseExistingChunk: true
+        }
       },
       chunks: 'all',
     },
@@ -58,6 +61,9 @@ module.exports = {
             },
           },
           {
+            loader: 'resolve-url-loader',
+          },
+          {
             // Compiles Sass to CSS
             loader: 'sass-loader',
             options: {
@@ -70,15 +76,24 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images',
-            },
+            loader: 'file-loader'
           },
         ],
       },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            }
+          }
+        ]
+      }
     ]
   },
+  devtool: 'eval-cheap-module-source-map',
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',

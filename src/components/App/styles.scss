@@ -1,6 +1,52 @@
-.search-sort-section {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-  padding: 15px;
+@import './../../sass/base';
+
+.app{
+  background: $grey;
+  &__message{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 32px;
+    color: $dark-grey;
+  }
+  &__search-sort-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background: $white;
+    box-shadow: $box-shadow;
+  }
+
+  &__main-section{
+    padding-right: 0;
+  }
+
+  &__header{
+    height: 75px;
+    background: $white;
+    padding: 10px 0;
+  }
+
+  &__logo{
+    height: 100%;
+  }
+
+  &__heading{
+    display: inline;
+    font-size: 24px;
+    font-family: $Medium;
+  }
 }
+
+@media (max-width: 992px) {
+  .app{
+    &__main-section{
+      padding: 0;
+    }
+  }
+}
+

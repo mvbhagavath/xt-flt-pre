@@ -1,10 +1,20 @@
+@import '../../sass/base';
+
 .sort {
   &__label {
+    font-family: $Medium;
     margin: 0 10px 0 0;
   }
 
   &__button {
-    background: transparent;
+    background: $grey;
     border-radius: 4px;
+    border: 1px solid $medium-grey;
+    margin: 0 2px;
+    font-family: $Light;
+    &.active{
+      background: $white;
+      border: 1px solid $green;
+    }
   }
 }

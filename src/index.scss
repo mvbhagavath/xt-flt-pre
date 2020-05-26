@@ -1,11 +1,7 @@
-@import '~bootstrap/dist/css/bootstrap.css';
+@import "sass/base.scss";
 
-$blue: rgb(29, 48, 219);
-
-.app-container {
-  .app-container-text {
-    color: $blue;
-  }
+body{
+  font-family: $Regular;
 }
 
 .row {

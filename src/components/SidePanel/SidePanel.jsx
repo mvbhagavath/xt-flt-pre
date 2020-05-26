@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Filters from "../Filters";
 import "./styles.scss";
 
@@ -19,12 +19,25 @@ const filters = [
     id: "origin",
   },
 ];
-const SidePanel = () => (
-  <div className="side-panel">
-    {filters.map((filter, index) => (
-      <Filters key={filter.id} {...filter} />
-    ))}
+
+const SidePanel = () => {
+  const [isFilterOpen, setFilterState] = useState(false);
+  return <div className="col-lg-2 side-panel">
+    <div className="side-panel__filter-label">
+      <span>Filters</span>
+      <button
+        className="side-panel__filter-label-icon"
+        onClick={() => setFilterState(!isFilterOpen)}
+      >
+        {isFilterOpen ? '-' : '+'}
+      </button>
+    </div>
+    <div className={`side-panel__filter-container ${isFilterOpen ? 'active' : '' }`}>
+      {filters.map((filter) => (
+        <Filters key={filter.id} {...filter} />
+      ))}
+    </div>
   </div>
-);
+};
 
 export default SidePanel;

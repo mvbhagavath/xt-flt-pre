@@ -1,10 +1,17 @@
-// TODO : create variables for colors, change tags to classnames
+@import '../../sass/base';
 
 .character-card {
   border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: $box-shadow;
   height: 100%;
   overflow: hidden;
+  color: $white;
+  background: $medium-grey;
+  transition: all .2s ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 
   &__image {
     position: relative;
@@ -16,39 +23,45 @@
   }
 
   &__info {
-    margin: 10px 0 0;
+    padding: 10px;
   }
 
   &__location-label {
     display: block;
+    line-height: 1.5;
+    font-family: $Medium;
   }
 
   &__basic-details {
-    background: #000;
+    background: $black;
     bottom: 0;
-    color: #fff;
+    color: $white;
     opacity: 0.5;
     position: absolute;
     text-align: center;
     width: 100%;
   }
 
+  &__location-details{
+    margin: 10px 0 0;
+  }
+
   &__status {
     border: 5px solid;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
 
     &--alive {
-      border-color: rgb(63, 223, 71);
+      border-color: $green;
     }
 
     &--dead {
-      border-color: rgb(230, 58, 58);
+      border-color: $red;
     }
 
     &--unknown {
-      border-color: rgb(78, 77, 77);
+      border-color: $grey;
     }
   }
 }

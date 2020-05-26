@@ -15,18 +15,20 @@ const CharacterCard = ({
     <div className="character-card__image">
       <img src={image} alt={name} />
       <div className="character-card__basic-details">
-        <span
-          className={`character-card__status character-card__status--${status.toLowerCase()}`}
-        />
         <span className="character-card__name-id">
           {id}. {name}
         </span>
       </div>
     </div>
     <div className="character-card__info">
-      <div className="character-card__other-details">{status}</div>
-      <div className="character-card__other-details">{species}</div>
-      <div className="character-card__other-details">{gender}</div>
+      <div className="character-card__other-details">
+        <span
+          className={`character-card__status character-card__status--${status.toLowerCase()}`}
+        />
+        {status}
+      </div>
+      <div className="character-card__other-details">{species} - {gender}</div>
+      <div className="character-card__other-details"></div>
       <div className="character-card__location-details">
         <span className="character-card__location-label">Origin</span>
         <span className="character-card__location">{origin.name}</span>
