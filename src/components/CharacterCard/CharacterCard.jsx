@@ -27,8 +27,9 @@ const CharacterCard = ({
         />
         {status}
       </div>
-      <div className="character-card__other-details">{species} - {gender}</div>
-      <div className="character-card__other-details"></div>
+      <div className="character-card__other-details">
+        {species} - {gender}
+      </div>
       <div className="character-card__location-details">
         <span className="character-card__location-label">Origin</span>
         <span className="character-card__location">{origin.name}</span>

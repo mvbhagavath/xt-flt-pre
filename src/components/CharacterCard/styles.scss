@@ -1,15 +1,15 @@
 @import '../../sass/base';
 
 .character-card {
+  background: $medium-grey;
   border-radius: 4px;
   box-shadow: $box-shadow;
+  color: $white;
   height: 100%;
   overflow: hidden;
-  color: $white;
-  background: $medium-grey;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
 
@@ -28,8 +28,8 @@
 
   &__location-label {
     display: block;
-    line-height: 1.5;
     font-family: $Medium;
+    line-height: 1.5;
   }
 
   &__basic-details {
@@ -42,7 +42,7 @@
     width: 100%;
   }
 
-  &__location-details{
+  &__location-details {
     margin: 10px 0 0;
   }
 

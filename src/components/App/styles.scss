@@ -1,50 +1,52 @@
 @import './../../sass/base';
 
-.app{
+.app {
   background: $grey;
-  &__message{
-    margin: auto;
-    display: flex;
-    justify-content: center;
+
+  &__message {
     align-items: center;
-    height: 100vh;
-    font-size: 32px;
     color: $dark-grey;
-  }
-  &__search-sort-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 15px;
-    background: $white;
-    box-shadow: $box-shadow;
+    font-size: 32px;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
   }
 
-  &__main-section{
+  &__search-sort-section {
+    align-items: center;
+    background: $white;
+    box-shadow: $box-shadow;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  &__main-section {
     padding-right: 0;
   }
 
-  &__header{
-    height: 75px;
+  &__header {
     background: $white;
+    height: 75px;
     padding: 10px 0;
   }
 
-  &__logo{
+  &__logo {
     height: 100%;
   }
 
-  &__heading{
+  &__heading {
     display: inline;
+    font-family: $medium;
     font-size: 24px;
-    font-family: $Medium;
   }
 }
 
 @media (max-width: 992px) {
-  .app{
-    &__main-section{
+  .app {
+    &__main-section {
       padding: 0;
     }
   }

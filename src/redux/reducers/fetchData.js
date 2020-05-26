@@ -56,7 +56,7 @@ const fetchData = (state = initialState, { type, payload }) => {
         ...state,
         setFilters: updatedFilters,
         filterUpdated: true,
-        apiError: false
+        apiError: false,
       };
     }
     default:

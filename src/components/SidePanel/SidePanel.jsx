@@ -22,22 +22,28 @@ const filters = [
 
 const SidePanel = () => {
   const [isFilterOpen, setFilterState] = useState(false);
-  return <div className="col-lg-2 side-panel">
-    <div className="side-panel__filter-label">
-      <span>Filters</span>
-      <button
-        className="side-panel__filter-label-icon"
-        onClick={() => setFilterState(!isFilterOpen)}
+  return (
+    <div className="col-lg-2 side-panel">
+      <div className="side-panel__filter-label">
+        <span>Filters</span>
+        <button
+          type="button"
+          className="side-panel__filter-label-icon"
+          onClick={() => setFilterState(!isFilterOpen)}
+        >
+          {isFilterOpen ? "-" : "+"}
+        </button>
+      </div>
+      <div
+        className={`side-panel__filter-container 
+          ${isFilterOpen ? "active" : ""}`}
       >
-        {isFilterOpen ? '-' : '+'}
-      </button>
+        {filters.map((filter) => (
+          <Filters key={filter.id} {...filter} />
+        ))}
+      </div>
     </div>
-    <div className={`side-panel__filter-container ${isFilterOpen ? 'active' : '' }`}>
-      {filters.map((filter) => (
-        <Filters key={filter.id} {...filter} />
-      ))}
-    </div>
-  </div>
+  );
 };
 
 export default SidePanel;

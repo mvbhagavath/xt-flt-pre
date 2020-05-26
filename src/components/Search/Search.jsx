@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { getData } from "../../utils/api";
-import { CHRACTER_ENDPOINT } from '../../utils/constants';
+import { CHRACTER_ENDPOINT } from "../../utils/constants";
 import { fetchDataSuccess, fetchDataFail } from "../../redux/actions/fetchData";
 import "./styles.scss";
 

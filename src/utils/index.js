@@ -1,9 +1,9 @@
 /**
  * addRemoveFilter - method to add or remove an item from the set filters.
- * @param {Object} currFilters 
- * @param {String} category 
+ * @param {Object} currFilters
+ * @param {String} category
  * @param {String} value
- * @returns {Object} updatedFilter 
+ * @returns {Object} updatedFilter
  */
 const addRemoveFilter = (currFilters, category, value) => {
   const filterIndex = currFilters[category].findIndex((item) => item === value);

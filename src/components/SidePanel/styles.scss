@@ -6,35 +6,37 @@
   margin: 10px 0 0;
   padding: 10px;
   
-  &__filter-label{
-    display: flex;
-    justify-content: space-between;
+  &__filter-label {
     align-items: center;
-    font-family: $Medium;
+    display: flex;
+    font-family: $medium;
+    justify-content: space-between;
   }
 
-  &__filter-label-icon{
-    display: none;
-    border-radius: 50%;
+  &__filter-label-icon {
     background: transparent;
+    border-radius: 50%;
+    display: none;
     min-width: 26px;
-    &:focus{
+
+    &:focus {
       outline: none;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .side-panel{
-    &__filter-label-icon{
+  .side-panel {
+    &__filter-label-icon {
       display: block;
     }
 
-    &__filter-container{
+    &__filter-container {
       height: 0;
       overflow: hidden;
       transition: height 2s ease-in-out;
-      &.active{
+
+      &.active {
         height: 240px;
       }
     }

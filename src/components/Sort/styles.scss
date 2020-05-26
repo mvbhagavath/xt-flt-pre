@@ -2,17 +2,18 @@
 
 .sort {
   &__label {
-    font-family: $Medium;
+    font-family: $medium;
     margin: 0 10px 0 0;
   }
 
   &__button {
     background: $grey;
-    border-radius: 4px;
     border: 1px solid $medium-grey;
+    border-radius: 4px;
+    font-family: $light;
     margin: 0 2px;
-    font-family: $Light;
-    &.active{
+
+    &.active {
       background: $white;
       border: 1px solid $green;
     }
